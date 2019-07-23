@@ -1,0 +1,14 @@
+a="stress"
+dict={}
+for i in a:
+     try:
+         dict[i] +=1
+     except:
+          dict[i] =1
+
+
+#print(dict)
+for j in a:
+    if dict[j]==1:
+         print(j)
+         break
