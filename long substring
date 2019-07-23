@@ -1,0 +1,18 @@
+a="1234567543"
+sub=""
+tmp=""
+for i in a:
+     if len(tmp)>0:
+          tmp2=i
+          tmp3=tmp[len(tmp)-1]
+          if int(tmp2) == int(tmp3)+1:
+               tmp +=tmp2
+          else:
+               tmp=""
+               tmp += tmp2
+     else:
+          tmp += i
+     if (len(tmp) > len(sub)):
+          sub = tmp
+
+print(sub)
