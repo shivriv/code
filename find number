@@ -1,0 +1,18 @@
+a=[1,2,10,15,18,19,25]
+find=25
+ub=0
+lb=len(a)
+while ub < find:
+      mid=(ub+lb)//2
+      if a[mid]==find:
+          print(mid)
+      else:
+           if a[mid] < find:
+                ub=mid
+           else:
+                lb=mid
+           mid=(ub+lb)//2
+           if a[mid] == find:
+                print(mid)
+                print(a[mid])
+                break
